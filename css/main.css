@@ -1,0 +1,29 @@
+body{
+    background: #373030;
+}
+
+.main .text{
+    float: left;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    float:left;
+    width: 350px;
+    margin:100px;
+    padding:10px 20px; 
+}
+
+.main .image img{
+    width: 600px;
+    float: right;
+    margin-right: 70px;
+   
+}
+
+a{
+    padding: 15px 15px;
+    background: #FEDA70;
+    color: black;
+    border-radius: 75px;
+    text-decoration: none; 
+}
