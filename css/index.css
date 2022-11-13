@@ -15,7 +15,7 @@ body {
     overflow-y: scroll;
   }
 
-  h4{
+  h4 {
     background-color: #AFAFAF;
     padding: 10px 10px;
     padding-left: 80px;
@@ -68,6 +68,22 @@ body {
     cursor: pointer;
   }
   
+  .modal .modal-content{
+    background: #C4C4C4;
+  }
+  .form-control{
+    background-color: #AFAFAF;
+    border: none;
+    border-radius: 20px;
+  }
+  .modal-title{
+    background-color: #AFAFAF;
+    padding: 10px 10px;
+    padding-left: 80px;
+    border-radius: 75px;
+    width: 300px;
+    margin-left: 80px;
+  }
   #msg {
     color: red;
   }
