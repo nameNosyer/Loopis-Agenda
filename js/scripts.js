@@ -4,6 +4,7 @@ let dateInput = document.getElementById("dateInput");
 let textarea = document.getElementById("textarea");
 let msg = document.getElementById("msg");
 let tasks = document.getElementById("tasks");
+let add = document.getElementById("add");
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -26,8 +27,7 @@ form.addEventListener("submit", (e) => {
     }
   };
 
-
-  let data = [];
+  let data = [{}];
 
   let acceptData = () => {
   data.push({
@@ -53,7 +53,7 @@ let createTasks = () => {
 
           <span class="options">
             <i onClick= "editTask(this)" data-bs-toggle="modal" data-bs-target="#form" class="fas fa-edit"></i>
-            <i onClick ="deleteTask(this)" class="fas fa-trash-alt"></i>
+            <i onClick ="deleteTask(this)";createTasks() class="fas fa-trash-alt"></i>
           </span>
     </div>
     `);
@@ -63,6 +63,9 @@ let createTasks = () => {
 
 let deleteTask = (e) => {
   e.parentElement.parentElement.remove();
+  data.splice(e.parentElement.parentElement.id, 1);
+  localStorage.setItem("data",JSON.stringify(data));
+  console.log(data);
 }
 
 let editTask = (e) => {
@@ -72,7 +75,7 @@ let editTask = (e) => {
   dateInput.value = selectedTask.children[1].innerHTML;
   textarea.value = selectedTask.children[2].innerHTML;
 
-  selectedTask.remove();
+  deleteTask(e);
 };
 
 let resetForm = () => {
@@ -82,7 +85,7 @@ let resetForm = () => {
 };
 
 (() => {
-  data = JSON.parse(localStorage.getItem("data"));
+  data = JSON.parse(localStorage.getItem("data")) || [];
   createTasks();
   console.log(data);
 })();
