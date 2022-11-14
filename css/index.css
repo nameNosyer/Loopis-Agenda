@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(#373030, black);
+    background-image: linear-gradient(#000000, #383838);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,7 +30,7 @@ body {
 
   #addNew {
   /*   justify-content: space-between; */
-    background-color: #FEDA70;
+    background-color: #0094da;
     padding: 10px 10px;
     padding-left: 80px;
     border-radius: 75px;
@@ -40,10 +40,14 @@ body {
     position: fixed;
     bottom: 60px;
     right: 480px;
+    color: white;
   }
 
   #addNew:hover {
-      cursor: pointer;
+    cursor: pointer;
+    background-image: linear-gradient(#0a95ff, #26348c);
+    color: white;
+    border: solid #0a95ff;
   }
 
   #tasks {
