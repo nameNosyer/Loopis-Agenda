@@ -13,6 +13,13 @@ body{
     padding:10px 20px; 
 }
 
+.line {
+    border-left: solid black;
+    height: 710px;
+    position: absolute;
+    left: 50%;
+}
+
 .main .image img{
     width: 600px;
     float: right;

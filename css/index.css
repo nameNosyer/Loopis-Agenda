@@ -18,10 +18,10 @@ body {
   h4 {
     background-color: #AFAFAF;
     padding: 10px 10px;
-    padding-left: 80px;
     border-radius: 75px;
     width: 400px;
     margin-left: 190px;
+    text-align: center;
   }
   
   .app::-webkit-scrollbar {
@@ -41,6 +41,10 @@ body {
     bottom: 60px;
     right: 480px;
   }
+
+    #addNew:hover {
+      cursor: pointer;
+    }
 
   #tasks {
     display: grid;
