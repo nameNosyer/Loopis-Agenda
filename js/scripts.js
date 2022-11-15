@@ -14,7 +14,7 @@ form.addEventListener("submit", (e) => {
   let formValidation = () => {
     if (textInput.value === "") {
       console.log("failure");
-      msg.innerHTML = "O titulo não poode ficar em branco";
+      msg.innerHTML = "O titulo não pode ficar em branco";
     } else {
       console.log("success");
       msg.innerHTML = "";
